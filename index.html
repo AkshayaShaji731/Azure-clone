@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Your Azure Free Account Or Pay As You Go | Microsoft Azure</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" /> -->
     <link rel="stylesheet"href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
 </head>
@@ -39,6 +40,12 @@
         <img src="assets/home-img-2.avif" alt="home-img">
      </section>
      <!-- section image end -->
+      <!-- fixed chat -->
+       <section class="chat">
+         <div class="chat-con">
+            <button> Chat with sales </button>
+         </div>
+       </section>
       <!-- section content start -->
      <section class="content">
       <div class="content-inner">
@@ -73,6 +80,7 @@
   <!-- </section> -->
    <!-- future news section -->
    <section class="future-news">
+    <!-- future section nav -->
     <div class="future-nav">
         <div class="f-nav-inner">
             <div class="f-nav-container">
@@ -86,11 +94,17 @@
         </div>
         <div class="f-nav-space"></div>
     </div>
+    <!-- end of the nav section -->
+     <!-- future main section -->
     <div class="feature-content">
+        <!-- background image  -->
         <div class="content-image">
             <img src="assets/future.avif" alt="footer-background-img">
         </div>
+        <!-- end -->
+         <!-- future section contents -->
         <div class="f-content-text">
+            <!-- future section content head -->
             <div class="f-text-head">
                 <div class="f-text-head1">
                     <div class="f-t-head1-inner">
@@ -105,9 +119,12 @@
                     </div>
                 </div>
             </div>
+            <!-- end of content head -->
+             <!-- future card section -->
             <div class="card-container">
                 <div class="inner-card-con">
                     <div class="card-conatiner-main">
+                        <!-- card-1 container -->
                         <div class="card-1-con">
                             <div class="card1">
                                 <div class="card-image-con"><div class="card image">
@@ -129,6 +146,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- end of card1 -->
+                         <!-- card2 container -->
                         <div class="card-2-con">
                             <div class="card1">
                                 <div class="card-image-con"><div class="card image">
@@ -150,6 +169,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- end of card2 -->
+                         <!-- card3 container -->
                         <div class="card-3-con">
                             <div class="card1">
                                 <div class="card-image-con"><div class="card image">
@@ -171,10 +192,13 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- end of card container -->
                     </div>
                 </div>
             </div>
+            <!-- end of future card section -->
         </div>
+        <!-- end of future content -->
     </div>
    </section>
    <!-- end of the future section -->
@@ -192,13 +216,17 @@
                     </div>
                 </div> 
             </div>
+            <!-- end of solution head -->
+             <!--solution main conatainer start  -->
             <div class="sol-content">
                 <div class="sol-content-inner">
                     <div class="sol-con-main">
-                        <div class="sol-content-top">
-                            <div class="sol-c-t-inner">
-                                <div class="s-c-t-main">
+                        <!-- solution main nav section -->
+                        <div class="sol-nav-conatiner">
+                            <div class="sol-nav-inner">
+                                <div class="s-nav-main">
                                     <div class="sol-nav">
+                                        <!-- solution nav button container -->
                                         <div class="sol-nav-content">
                                             <button class="sol-btn" id="sol-btn1"><span>Featured solutions</span></button>
                                             <button class="sol-btn"><span>Cloud migration</span></button>
@@ -211,69 +239,107 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="sol-text-conatiner">
-                                    <div class="sol-text">
-                                        <div class="sol-t-inner">
-                                            <div class="sol-t-main">
-                                                <div class="sol-t-main-content">
-                                                    <div class="sol-t-content">
-                                                        <ul>
-                                                            <li><div class="sol-li-1-con">
-                                                                <div class="sol-li-1-top">
-                                                                    <button class="sol-li-1-btn">
-                                                                        <div class="sol-li-1-bottom">AI</div>
-                                                                    </button>
+                            </div>
+                        </div>
+                        <!-- end of the nav section -->
+                         <!-- solution content section -->
+                        <div class="sol-text-conatiner">
+                            <div class="sol-text">
+                                <div class="sol-t-inner">
+                                    <div class="sol-t-main">
+                                        <div class="sol-t-main-content">
+                                            <div class="sol-t-content">
+                                                <ul >
+                                                    <!-- list item 1 -->
+                                                    <li><div class="sol-li-1-con">
+                                                        <div class="sol-li-1-top">
+                                                            <button class="sol-li-1-btn" id="sol-li-1-btn-1">
+                                                                <div class="sol-li-1-bottom">AI</div>
+                                                            </button>
+                                                            <div class="sol-li-drop-content">
+                                                                <div class="sol-drop-content-inner">
+                                                                    <div class="sol-drop-top">
+                                                                        <div class="sol-d-content">Build intelligent apps at enterprise scale with the Azure AI portfolio.</div>
+                                                                    </div>
+                                                                    <div class="sol-drop-bottom">
+                                                                        <div class="sol-drop-bottom1">
+                                                                            <a href="#"><span>Explore Azure AI solutions</span></a>
+                                                                        </div>
+                                                                        <div class="sol-drop-bottom2">
+                                                                            <div class="sol-drop-bottom2-top">
+                                                                                <img src="assets/sol-drop.avif" alt="sol-drop-img">
+                                                                            </div>
+                                                                            <div class="sol-drop-bottom2-bottom">
+                                                                                <div class="sol-d-b2-b-inner">
+                                                                                    <a href="#"><div class="sol-drop-img-con"><span></span></div></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
-                                                            </div></li>
-                                                            <li><div class="sol-li-1-con">
-                                                                <div class="sol-li-1-top">
-                                                                    <button class="sol-li-1-btn">
-                                                                        <div class="sol-li-1-bottom">An adaptive cloud</div>
-                                                                    </button>
-                                                                </div>
-                                                            </div></li>
-                                                            <li><div class="sol-li-1-con">
-                                                                <div class="sol-li-1-top">
-                                                                    <button class="sol-li-1-btn">
-                                                                        <div class="sol-li-1-bottom">Migrate to innovate</div>
-                                                                    </button>
-                                                                </div>
-                                                            </div></li>
-                                                            <li><div class="sol-li-1-con">
-                                                                <div class="sol-li-1-top">
-                                                                    <button class="sol-li-1-btn">
-                                                                        <div class="sol-li-1-bottom">Build and modernize intelligent apps</div>
-                                                                    </button>
-                                                                </div>
-                                                            </div></li>
-                                                            <li><div class="sol-li-1-con">
-                                                                <div class="sol-li-1-top">
-                                                                    <button class="sol-li-1-btn">
-                                                                        <div class="sol-li-1-bottom">Azure Innovate & Azure Migrate and Modernize</div>
-                                                                    </button>
-                                                                </div>
-                                                            </div></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
+                                                            </div>
+                                                    </div></li>
+                                                    <!-- end -->
+                                                     <!-- list item 2 -->
+                                                    <li><div class="sol-li-1-con">
+                                                        <div class="sol-li-1-top">
+                                                            <button class="sol-li-1-btn">
+                                                                <div class="sol-li-1-bottom">An adaptive cloud</div>
+                                                            </button>
+                                                        </div>
+                                                    </div></li>
+                                                    <!-- end -->
+                                                     <!-- list item 3 -->
+                                                    <li><div class="sol-li-1-con">
+                                                        <div class="sol-li-1-top">
+                                                            <button class="sol-li-1-btn">
+                                                                <div class="sol-li-1-bottom">Migrate to innovate</div>
+                                                            </button>
+                                                        </div>
+                                                    </div></li>
+                                                    <!-- end -->
+                                                     <!-- list item 4 -->
+                                                    <li><div class="sol-li-1-con">
+                                                        <div class="sol-li-1-top">
+                                                            <button class="sol-li-1-btn" id="sol-li-1-btn3">
+                                                                <div class="sol-li-1-bottom"> Build and modernize intelligent apps</div>
+                                                            </button>
+                                                        </div>
+                                                    </div></li>
+                                                    <!-- end -->
+                                                     <!-- list item 5 -->
+                                                    <li><div class="sol-li-1-con">
+                                                        <div class="sol-li-1-top">
+                                                            <button class="sol-li-1-btn" id="sol-li-1-btn3">
+                                                                <div class="sol-li-1-bottom">Azure Innovate & Azure Migrate and Modernize</div>
+                                                            </button>
+                                                        </div>
+                                                    </div></li>
+                                                    <!-- end -->
+                                                </ul>
                                             </div>
-                                        </div>
-                                        <div class="sol-link">
-                                            <a href="#">
-                                                <span class="sol-link-span">
-                                                    <span></span>
-                                                </span>
-                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- end of solution content -->
                     </div>
+                    <!-- solution link -->
+                    <div class="sol-link">
+                        <a href="#">
+                         <span class="sol-link-span"><span></span></span>
+                         <span class="sol-link-text">View all solutions (40+)</span>
+                         </a>
+                     </div>
+                     <!-- end of solution link -->
                 </div>
             </div>
+            <!-- solution main container end -->
         </div>
      </section>
+     <!-- end of solution section -->
+    </script>
 </body>
 </html>
 

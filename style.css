@@ -41,7 +41,9 @@ body{
     --bg-1:#f4fafd;
     --head-2:#0e1726;
 }
-/* header start */
+
+/*--------------- header start ----------------*/
+
 header{
     margin-bottom: 34px;
     margin-top: 0;
@@ -65,7 +67,9 @@ header{
     max-width: 1600px;
     height: 100%;
 }
-/* menu button */
+
+/* ----------menu button----------- */
+
 .menu-btn{
     padding: 6px 0 8px 0;
     margin: 1px;
@@ -87,8 +91,11 @@ header{
     line-height: 15px;
     margin-top: 5px;
 }
-/* end menu */
-/* search conatiner */
+
+/* -----------end menu-------- */
+
+/*---------- search conatiner -------------*/
+
 .search{
     margin: 0;
     float: right;
@@ -96,7 +103,7 @@ header{
     flex: 1 0 auto;
     position: relative;
 }
-/* search button */
+/* -----------search button ---------*/
 .search-btn{
     position: absolute;
     left: 1px;
@@ -123,8 +130,8 @@ header{
    margin-left:2px;
    position: relative;
 }
-/* search end */
-/* logo */
+/*------------ search end --------------*/
+/* ------------logo------------------- */
 .search a{
     margin: 1px;
     padding: 9px 4px 12px;
@@ -144,8 +151,8 @@ header{
     border: none;
     cursor: pointer;
 }
-/* logo end */
-/* nav start */
+/*-------------- logo end --------------*/
+/*--------------- nav start------------ */
 .nav{
     position: absolute;
     left: 0;
@@ -184,13 +191,57 @@ header{
     cursor: pointer;
     padding-left: 11px;
 }
-/* end of nav */
-/* home container */
+/*------------ end of nav--------- */
+/*-------- fixed chat ------------*/
+.chat{
+    display: none;
+}
+.chat-con{
+    position: fixed;
+    right: 1rem;
+    bottom: 0;
+    z-index: 1030;
+    text-align: left;
+    display: flex;
+
+}
+.chat-con button{
+    padding: 0.75rem;
+    padding-left:2.185rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    font-weight: 600;
+    font-size: .9375rem;
+    line-height: 1.375rem;
+    letter-spacing: -.02em;
+    background-color:#0067b8;
+    color: var(--light);
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: .5rem;
+    font-family: "SegoeUI";
+}
+.chat-con button::after{
+    font-family: "Fluent Icons";
+    content: "";
+    font-weight: 400;
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    left: .75rem;
+    margin-top: -.5em;
+    color: #fff;
+    font-size: .9375rem;
+    letter-spacing: -.02em;
+}
+/* ------------home container-------------- */
 .home{
     /* min-height: 580px; */
     padding: 0 0 56px 0;
 }
-/* home image section   */
+/*------------ home image section----------  */
 .home-img{
     max-height: 100%;
     overflow: hidden;
@@ -204,8 +255,8 @@ header{
     aspect-ratio: initial;
     box-sizing: border-box;
 }
-/* end of home image section */
-/* section content */
+/* ---------end of home image section--------- */
+/* -----------section content---------------- */
 .content{
     padding: 0 1rem;
     width: 100%;
@@ -237,7 +288,7 @@ header{
     flex-grow: 0;
     flex-shrink: 0;
 }
-/* content-1 */
+/*------------- content-1--------------- */
 .content-1{
     margin: 0 0 0.625rem;
     display: block;
@@ -250,7 +301,7 @@ header{
     letter-spacing:0.08em;
     font-family: "SegoeUI";
 }
-/* content-2 */
+/*------------content-2---------------*/
 .content-2{
     margin: 0;
     color: var(--head-2);
@@ -265,7 +316,7 @@ header{
     margin: 0;
     font-family: "SegoeUI";
 }
-/* content-3 */
+/*----------------- content-3 ----------*/
 .content-3{
     margin: 1rem 0 0;
     color: var(--head-2);
@@ -283,7 +334,7 @@ header{
     letter-spacing: -0.03em;
     font-family: "SegoeUI";
 }
-/* content 4 */
+/*---------- content 4----------- */
 .content-4{
     margin: 1.5rem 0 0;
     box-sizing: border-box;
@@ -329,14 +380,15 @@ header{
     height: 91px;
     background: var(--bg-1);
 }
-/* end of the contend section */
-/* home end */
-/* future-news */
+/* -----------end of the contend section----------*/
+/*-------------home end----------------------*/
+/*-------------future-news------------------*/
 .future-news{
     display: block;
     box-sizing: border-box;
     
 }
+/*------------future nav section--------------*/
 .future-nav{
     height: 60px;
     margin: 0;
@@ -385,7 +437,7 @@ header{
     font-weight: 600;
     font-size: 0.875rem;
     line-height: 1.25rem;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.035em;
     text-align: left;
     font-family: "SegoeUI";
     color: #004275;
@@ -418,6 +470,8 @@ header{
     width: 100%;
     background-color: #004275;
 }
+/*---------end of the future nav-----------*/
+/*---------future main container----------*/
 .feature-content{
     display: block;
     box-sizing: border-box;
@@ -425,6 +479,7 @@ header{
     position: relative;
     padding:3.25rem 0 3.5rem 0;
 }
+/*----------background image----------*/
 .content-image{
     position: absolute;
     top: 0;
@@ -434,7 +489,7 @@ header{
     display: block;
     max-height: 100%;
 }
-.f-content{
+/* .f-content{
     padding-right: 1rem;
     padding-left: 1rem;
     width: 100%;
@@ -442,7 +497,7 @@ header{
     margin-left: auto;
     display: block;
     box-sizing: border-box;
-}
+} */
 .content-image img {
     object-fit:cover;
     width: 100%;
@@ -450,6 +505,8 @@ header{
     aspect-ratio: initial;
     box-sizing: border-box;
 }
+/*----------end of future contend------------*/
+/*----------future content head-------------*/
 .f-content-text{
     padding: 0 1rem;
     width: 100%;
@@ -507,6 +564,8 @@ header{
     font-family: "SegoeUI";
     margin-top: 11px;
 }
+/*----------end of the head content-----------------*/
+/*---------future card section--------------------*/
 .card-container{
     margin-top: 1.25rem;
     display: flex;
@@ -662,8 +721,11 @@ header{
     font-family: "SegoeUI";
     
 }
-/* end of the future section */
-/* solution section */
+/*----------- end of the cards section ----------*/
+
+/*---------------- end of the future section -----------*/
+
+/*------------- solution section -------------------*/
 .solution-container{
     background-color:#f4fafd;
     display: block;
@@ -683,6 +745,7 @@ header{
     text-align: left;
     color: var(--head-1);
 }
+/*---------------solution head------------------*/
 .solution-head{
     display: flex;
     flex-wrap: wrap;
@@ -734,13 +797,16 @@ header{
 .sol-h-bottom span{
     margin-bottom: 2px;
 }
+/*---------------end of the solution head---------------*/
+/*---------------soltion main container------------------*/
 .sol-content{
     margin-top: 1.25rem;
     display: flex;
     flex-wrap: wrap;
     margin-right: -.25rem;
     margin-left: -.25rem;
-    box-sizing: border-box;
+    box-sizing: border-box; 
+    width: 100%;
 }
 .sol-content-inner{
     display: flex;
@@ -758,25 +824,29 @@ header{
     display: flex;
     flex-direction: column;
 }
-.sol-content-top{
+
+/*------------------solution nav section------------------*/
+
+.solution-nav-conatiner{
     display: block;
     margin-left: 0;
     margin-right: 0;
 }
-.sol-c-t-inner{
+.sol-nav-inner{
     display: block;
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%;
     padding-inline: 0px;
-    margin-right: 1.125rem;
+    /* margin-right: 1.125rem; */
 }
-.s-c-t-main{
+.s-nav-main{
     display: block;
     overflow-x: scroll;
     overflow-y: hidden;
     scrollbar-width: none;
 }
+/*---------------nav button--------------------*/
 .sol-nav{
     width: 740px;
     display: block;
@@ -824,8 +894,9 @@ header{
     display: block;
     color: #004275;
     position: absolute;
-    right:12px;
+    right:4px;
     top:3.5px;
+    background: linear-gradient(270deg, #f2f2f2 25%, rgba(242, 242, 242, 0) 100%);
 }
 .sol-arrow button{
     margin: 0;
@@ -833,7 +904,7 @@ header{
     height: 40px;
     border-radius: 12.5rem;
     border: 2px solid #004275;
-    background: linear-gradient(270deg, #f2f2f2 65%, rgba(242, 242, 242, 0) 100%);
+    background: linear-gradient(270deg, #f2f2f2 25%, rgba(242, 242, 242, 0) 100%);
     
 }
 .sol-arrow button::after{
@@ -843,6 +914,8 @@ header{
     font-weight: 400;
     font-family:"Fluent Icons";
 }
+/*-----------------solution nav end-----------------*/
+/*-----------------solution content section------- */
 .sol-text-container{
     display: flex;
     flex-wrap: wrap;
@@ -862,9 +935,8 @@ header{
 }
 .sol-t-inner{
     position: relative;
-    margin: 1.5rem 0 0 0;
+    /* margin: 1.5rem 0 0 0; */
     display: block;
-    margin: 0;
 }
 .sol-t-main{
     display: block;
@@ -881,6 +953,7 @@ header{
     display: flex;
     width: 100%;
 }
+/* -----list----------- */
 .sol-t-content ul{
     display: block;
     flex-basis: 100%;
@@ -890,6 +963,7 @@ header{
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 0;
+    margin-right:.48rem;
 }
 .sol-t-content ul li{
     display: flex;
@@ -910,19 +984,24 @@ header{
 }
 .sol-li-1-btn{
     display: flex;
-    gap: 0.5rem;
     align-items:center;
     color: var(--head-2);
     justify-content: space-between;
     flex-direction: row-reverse;
     width: 100%;
     cursor: pointer;
-    padding: 1.5rem 0 ;
+    padding:1.5rem 0 ;
     border: none;
     gap: 0.5rem;
     background-color:transparent;
     text-align: justify;
 }
+/* #sol-li-1-btn-1{
+
+} */
+ #sol-li-1-btn3::before{
+    margin-top: 1.35rem;
+ }
 .sol-li-1-btn::before{
     content: "";
     font-size: 1rem;
@@ -931,7 +1010,10 @@ header{
     color: var(--head-2);
     line-height: 1.5625rem;
     list-style-type: none;
-    margin-top: auto;
+    /* margin-top: auto; */
+}
+#sol-li-1-btn-1::before{
+    transform: rotate(-180deg);
 }
 .sol-li-1-bottom{
     display: contents;
@@ -940,7 +1022,128 @@ header{
     line-height: 1.5rem;
     letter-spacing: -0.03em;
     font-family: "SegoeUI";
+    word-spacing: 0;
+    /* margin-top:.250rem; */
 }
+/* -------------end of list------ */
+
+/* -------------solution drop link----------------- */
+.sol-li-drop-content{
+    display: block;
+    box-sizing: border-box;
+    margin-top: -0.5rem;
+}
+.sol-drop-content-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: #17253d;
+}
+.sol-drop-top{
+    display: block;
+}
+.sol-d-content{
+    display: contents;
+    color: #17253d;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: -0.48px;
+    line-height: 1.5rem;
+    text-align: left;
+    font-family: "SegoeUI";
+}
+.sol-drop-bottom{
+    display: block;
+    box-sizing: border-box;
+    margin-top: 1px;
+}
+.sol-drop-bottom1{
+    display: contents;
+}
+.sol-drop-bottom1 a{
+    margin-bottom: 1.5rem;
+    color: #004275;
+    cursor: pointer;
+    text-decoration: underline;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.sol-drop-bottom1 a span{
+    padding-bottom: 0.125rem;
+    color: #004275;
+    font-family: "SegoeUI";
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: -0.48px;
+}
+.sol-drop-bottom2{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.sol-drop-bottom2-top{
+    /* border-radius: 1rem; */
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.sol-drop-bottom2-top img{
+    display: block;
+    height: inherit;
+    max-width: inherit;
+    object-fit: fill;
+    aspect-ratio: initial;
+    border-radius: 1rem;
+}
+.sol-drop-bottom2-bottom{
+    position: absolute;
+    padding: 0.75rem;
+    display: block;
+}
+.sol-d-b2-b-inner{
+    display: contents;
+}
+.sol-d-b2-b-inner a{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 0.75rem;
+    border: 2px solid transparent;
+    padding: 0.875rem;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgb(0, 120, 212);
+    border-radius: 0.5rem;
+    margin-top: 1px;
+}
+.sol-drop-img-con{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+
+}
+.sol-drop-img-con span{
+    display: flex;
+    align-items: center;
+    color: var(--light);
+}
+.sol-drop-img-con span::after{
+    content: "";
+    font-weight: 400;
+    line-height: 1;
+    color: inherit;
+    font-family:"Fluent Icons";
+    font-size: 1rem;
+}
+/* end of drop link */
+/* -------------end of solution link---------- */
+
+/* ------------solution link ----------------- */
 .sol-link{
     display: contents;
 }
@@ -963,6 +1166,10 @@ header{
     color: var(--light);
 
 }
+.sol-link-span span{
+    display: flex;
+    align-items: center;
+}   
 .sol-link-span span::before{
     content: "";
     font-weight: 400;
@@ -970,3 +1177,13 @@ header{
     font-family:"Fluent Icons";
     letter-spacing: -.02em;
 }
+.sol-link-text{
+    padding-bottom: 0.125rem;
+    color: #004275;
+    font-weight: 600;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    cursor: pointer;
+    letter-spacing: -0.48px;
+}
+/* -----------end of solution link------------- */
