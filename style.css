@@ -1273,7 +1273,7 @@ header{
 .pro-f-card-con{
     padding: 1rem;
     grid-area: 1/1;
-    display:flex;
+    display:block;
     flex-direction: column;
     justify-content: flex-end;
     position: static;
@@ -1311,6 +1311,7 @@ header{
     line-height: 2rem;
     letter-spacing: -.03em;
     font-family: "SegoeUI";
+    margin: 0;
 }
 .s-f-para-con{
     width: 100%;
@@ -2049,10 +2050,11 @@ header{
     padding-inline:1rem;
 }
 .cust-card{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    padding-inline:0.25rem;
+    padding-inline:0.25rem; */
+    display: block;
     background-color: #fff;
     border-radius: 1rem;
 }
@@ -2080,33 +2082,389 @@ header{
     aspect-ratio:auto;
     vertical-align: middle;
 }
-.cus-content-con{
+.cust-content-con{
     display: block;
     padding: 1rem;
 }
-.cus-content{
+.cust-content{
     display: flex;
-    gap: 1.5rem;
     flex-direction: column;
+    height: auto;
+    gap: 1.5rem;
     position: relative;
     flex: 1 1 auto;
     height: 100%;
 }
-.cus-con-top{
+.cust-c-top{
     display: flex;
     flex-direction: column;
-    gap:0.75rem
+    gap: 0.75rem;
 }
-.c-t-inner{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
+.c-top-img-con{
+    display: block;
+    width: 242px;
+    height:74.4219px;
+    max-width: 100%;
+}
+.c-top-image{
+    display: block;
+    width: 174px;
+    height: 100%;
+    border: 0.0625rem solid #bdc5d2;
+    border-radius: 0.5rem;
+}
+.c-top-image img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    aspect-ratio: initial;
+    vertical-align: center;
 }
-.c-t-inner img{
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   aspect-ratio: auto;
+.cust-top-content{
+    display: contents;
+    width: 100%;
+}
+.cust-top-content span{
+    font-weight: 600;
+    font-size: 1.25rem;
+    letter-spacing: -0.05em;
+    line-height: 1.75rem;
+    font-family: "SegoeUI";
+    color: #17253d;
+}
+.cust-c-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.cust-c-b-text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.c-b-text{
+    display: contents;
+}
+.c-b-text h3{
+    font-weight: 600;
+    font-family: "SegoeUI";
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing:-0.03rem;   
+    color: #0e1726; 
+}
+.c-b-link{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* flex-wrap: wrap; */
+}
+.c-b-link1-con{
+    display: flex;
+    gap: 0.75rem;
+    justify-content: flex-start;
+}
+.c-b-link1-l{
+    display: flex;
+    column-gap: 0.5rem;
+    /* width: 112.734px; */
+}
+.c-b-link-img{
+    max-width: 20px;
+    max-height: 20px;
+    height: 100%;
+    width: 100%;
+}
+.c-b-link-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.c-b-link-txt-con{
+    display:block;
+    text-align: left;
+    width:120px;
+    /* height: 19px;  */
+}
+.c-b-link-txt{
+    display: contents;
+    /* width:88.7px;
+    height: 19px; */
+}
+.c-b-link-txt a{
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #0067b8; 
+    text-decoration: underline;
+    font-family: "SegoeUI"; 
+}
+.c-b-link2-con
+{
+    display: flex;
+    gap: 0.5rem;
+}
+.cust-btn{
+    display: block;
+    margin: 1.5rem 0 0 0;
+
+}
+.cust-btn a{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #0078d4;
+    color:var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: "SegoeUI";
+}
+.cust-btn a span{
+    padding-bottom: 0.125rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+    letter-spacing: -0.02rem;
+    font-family: "SegoeUI";
+}
+.cust-nxt{
+    padding: 1rem;
+    display: block;
+    gap: 1rem;
+}
+#c-sroll-btn{
+ display: flex;
+ gap: 0.5rem;   
+}
+#c-scroll{
+    height: 50px;
+    width: 50px;
+}
+.c-link{
+    padding: 1rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+.N-step{
+    display: block;
+    background-image: url(assets/step-back.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-block: 3.5rem;
+}
+.N-step{
+    padding-inline: 1rem;
+}
+.step-head{
+    text-align: center;
+    display: contents;
+}
+.step-head h2{
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    letter-spacing: -0.05rem;
+    color:#0e1726;
+    font-family: "SegoeUI";
+}
+.step-card-con{
+    margin-top: 1.5rem;
+    display: block;
+}
+.step-card{
+    /* display: flex;
+    flex-direction: column; */
+    gap: 0.75rem;
+    /* flex-wrap: wrap; */
+    display: grid;
+}
+.st-card{
+    display:flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--light);
+    border-radius: 1rem;
+}
+.st-card-con{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+    text-align: left;
+}
+.st-c-head{
+    display:block;
+    word-wrap: break-word;
+}
+.st-c-head-inner{
+    display: contents;
+}
+.st-c-head h3{
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    /* letter-spacing: -0.03rem; */
+    font-family: "SegoeUI";
+    margin: 0;
+    word-wrap: break-word;
+}
+.st-c-para{
+    display: contents;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.03rem;
+    margin: 0;  
+    color: #17253d;
+}
+.st-c-link{
+    margin-top: 2rem;
+}
+.social-container{
+    display: flex;
+}
+.social-con{
+    padding: 1.5rem 1rem;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0.75rem;
+}
+.social-top{
+    display: block;
+}
+.social-top a{
+    display:inline-flex;
+    padding: 0.75rem;
+    margin-block: 0.5rem;
+    background-color: #e6e6e6;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+    letter-spacing: -0.02em;
+    font-family: "SegoeUI";
+    color: #0e170e;
+}
+.social-top a img{
+    margin-right: 0.5rem;
+}
+.social a img{
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 24/24;
+    width: 24px;
+}
+.social-bottom {
+    margin-left: 0.75rem;
+    margin-block: 0.5rem;
+    display: flex;
+}
+.social a{
+    margin-right: 0.75rem;
+}
+footer{
+    margin-top: 3rem;
+    padding-bottom:30px;
+    background-color: #f2f2f2;
+    min-width: 280px;
+}
+.footer-top{
+    display: block;
+    padding: 0 12px;
+}
+.f-top{
+    display: grid;
+}
+.f-top-inner{
+    padding-inline:12px;
+}
+.top1-inner-head{
+    color: #616161;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 36px 0 4px;
+    font-weight: 600;
+    font-family: "SegoeUI";
+}
+.f-top-inner ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.f-top-inner ul li{
+    padding: 8px 0;
+    display: list-item;
+    font-size: 11px;
+    line-height: 1rem;
+    list-style-type: none;
+    color: #616161;
+    font-family: "SegoeUI";
+}
+.footer-bottom{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 30px 24px 16px;
+    margin: 0 auto;
+}
+.footer-bottom a{
+    text-decoration: none;
+    color: #616161;
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: left;
+    font-family: "SegoeUI";
+}
+#f-a1{
+    padding-right: 1.5rem;
+}
+#f-a1::before{
+    content: "";
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+    display: inline-block;
+    font-family:"Fluent Icons";
+    color: #616161;
+}
+#f-a2{
+    padding: 4px 24px 0px 0px;
+    margin: 8px 0 16px;
+}
+#f-a2 img{
+    height: 16px;
+    width: 32px;
+    padding-right: 0.5rem;
+    /* padding-top: 6px; */
+}
+.f-ul{
+    margin:12px 0px 3px;
+    display: block;
+}
+.f-ul ul{
+    list-style-type: none;
+    color: #616161;
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: left;
+    font-family: "SegoeUI";
+    padding-right: 3rem;
+    margin: 0;
+    padding: 0;
+}
+.f-ul ul li{
+    float: left;
+    padding-top: 6px;
+    padding-right: 13px;
 }
