@@ -1195,7 +1195,7 @@ header{
 /* -----------end of solution link------------- */
 /* product and service section */
 #pro-ser-container{
-    padding-block: 3rem 3.5rem;
+    padding-block: 3rem 3.25rem;
 }
 #pro-ser-content{
     margin-top: 1.75rem;
@@ -1206,19 +1206,10 @@ header{
 .pro-ser-card-con{
     display: flex;
     flex-wrap: wrap;
-    /* margin-right:-.25rem;
-    margin-left: -.25rem; */
-    margin: 0 -.05rem 0 -.05rem;
+    padding-inline:0.25rem;
     row-gap:0.75rem;
 
 }
-.pro-grid-con{
-    display: grid;
-    background-color: initial;
-    box-shadow:  0 0.125rem rgba(0, 0, 0, 0.12),0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
-    height: 100%;
-    border-radius: 1rem;  
-} 
 #pro-nav-f-btn{
     background-color: #005597;
     padding: 0.60rem 1rem 0.55rem 1rem;
@@ -1233,56 +1224,26 @@ header{
 #pro-ser-arrow{
     top:4px;
 }
-.pro-grid-1{
-  grid-area: 1/1;
-  z-index: 1;
-  overflow: hidden;  
-  border-radius: 1rem;
-}
-.ser-innner{
-    display: flex;
-    object-fit: cover;
-    position: relative;
+.pro-f-con{
+    display: block;
+    background-image: url(assets/window.avif);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
-    max-width: 100%;
-    height: 100%;      
-} 
-.ser-inner::before{
-    content: "";
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height:100%;
-    background-color: linear-gradient(180deg, rgba(244, 250, 253, 0) 0%, #f4fafd 100%);
-}
-.ser-main{
-    display: inherit;
-    width: 100%;
-    max-width: 100%;
-    height: 100%; 
-}
-.ser-main .pro-img img{
-    width: inherit;
-    height:inherit;
-    max-width: inherit;
-    object-fit: cover;
+    height: auto;
     border-radius: 1rem;
-    aspect-ratio: 21/9;
+    box-shadow:  0 0.125rem rgba(0, 0, 0, 0.12),0 0.063rem 0.125rem rgba(0, 0, 0, 0.14);
 }
-.pro-f-card-con{
+.pro-f-inner{
+    display: flex;
     padding: 1rem;
-    grid-area: 1/1;
-    display:block;
+    height: 100%;
     flex-direction: column;
-    justify-content: flex-end;
-    position: static;
-    z-index: 2;
-    background: transparent;
 }
 .empty-div{
-    height: 220px;
-    display: block;
+    height: 224px;
+    display: flex;
 }
 .s-f-content-con{
     display: flex;
@@ -1309,7 +1270,7 @@ header{
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 2rem;
-    letter-spacing: -.03em;
+    letter-spacing: -.05em;
     font-family: "SegoeUI";
     margin: 0;
 }
@@ -1358,128 +1319,72 @@ header{
     letter-spacing: -0.02em;
 }
 .small-card{
-    padding-left: .25rem;
-    padding-right: .25rem;
-    position: relative;
-    width: 100%;
     display: block;
-}
-.small-card-inner{
-    display: flex;
-    flex-wrap: wrap;
-    gap:0.75rem;
-    height: 100%;
-}
-.small-card-main{
-    flex:0 0 100%;
-    display: block;
-    box-sizing: border-box;
-}
-.s-card-con{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    min-width: 1px;
-    word-wrap: break-word;
-    height: 100%;
-    border-radius: 1rem;
-    box-shadow:  0 0.125rem rgba(0, 0, 0, 0.12),0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
-    background: #fefefe;
-}
-.s-card{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    position: relative;
-    flex: 1 1 auto;
-    min-width: 1px;
-    word-wrap: break-word;
-    height: 100%;
-    padding: 1rem;
-}
-.s-card-top{
-    display: flex;
-    align-items: flex-start;
-    text-align: left;
-    flex-direction: column;
-    gap:0.75rem;
-}
-.s-image-con{
-    display: block;
-}
-.s-image{
-    background-color: #fefefe;
-    border-radius: 0.5rem;
-    border: 0.0625rem solid #e6f2fb;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    width: 3rem;
-    height: 3rem;
-}
-.s-image-inner{
-    width: 100%;
-    height: 100%;
-    max-width:1.5rem;
-    max-height: 1.5rem;
-    display: inline-flex;
-}
-.s-image-main{
-    display: flex;
-    width: inherit;
-    height: auto;
     max-width: 100%;
 }
-.s-image-main{
-    height:100%;
-    width: 100%;
-    max-width: 24px;
-    max-height: 24px;
-    object-fit: fill;
-}
-.s-para-con{
+.small-inner{
     display: flex;
-    align-items: flex-start;
-    text-align: left;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--light);
+    border-radius:1rem;
+    height: auto;
+    box-shadow:  0 0.125rem rgba(0, 0, 0, 0.12),0 0.063rem 0.125rem rgba(0, 0, 0, 0.14);
+}
+.small-top{
+    display: flex;
     flex-direction: column;
     gap: 0.75rem;
 }
-.s-para-head{
+.small-img{
+    display:inline-flex;
+    background-color: #fefefe;
+    justify-content: center;
+    align-items: center;
+    border:0.0625rem solid #e6f2fb;
+    width: 2.90rem;
+    height: 2.90rem;
+    border-radius: 0.5rem;
+}
+.small-img img{
+    max-width: 24px;
+    max-height: 24px;
+    width: 100%;
+    height: 100%;
+}
+.small-text{
     display: flex;
-    align-items: flex-start;
-    gap: 0.25rem;
     flex-direction: column;
+    gap: 0.75rem;
+    /* margin: -2px 0 0 0; */
 }
-.s-p-h-content{
-    display: contents;
-    letter-spacing:-0.54px;
-    font-family: "SegoeUI";
+#small-txt{
+    margin-top: -1px;
 }
-.s-p-h-content span{
+.small-head{
     font-weight: 600;
     font-size: 1.125rem;
     line-height: 1.5rem;
     letter-spacing:-0.54px;
     font-family: "SegoeUI";
     color: #0e1726;
-    display: block;
+    display:contents; 
 }
-.s-para-p{
-    display: block;
-    text-align: left;
+.small-para{
+    display: contents;
+    letter-spacing: -0.03rem;
 }
-.s-para-content{
-   display: contents; 
+.small-para span { 
    font-weight: 400;
    font-size:  1rem;
    line-height: 1.5rem;
-   letter-spacing: -0.03rem;
+   letter-spacing: -0.03em;
    color: #17253d;
    font-family: "SegoeUI";
+   text-align: left;
 }
 .s-card-bottom{
-    margin-top: 2rem;
+    margin-top: 1.12rem;
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
@@ -1496,6 +1401,7 @@ header{
     align-items: center;
     gap: 0.5rem;
     cursor: pointer;
+    letter-spacing: -0.03em;
 }
 .s-card-link a span{
     padding-bottom: 0.125rem;
@@ -1512,9 +1418,12 @@ header{
     align-items: center;
     gap: 0.5rem;
     cursor: pointer;
+    margin-left: 0.25rem;
+    margin-top: 0.45rem;
     text-decoration: none;
 }
 .pro-ser-link a .image{
+    margin-bottom: 1px;
     padding: 0.5rem;
     display: flex;
     align-items: center;
@@ -1543,10 +1452,22 @@ header{
     font-size: .875rem;
     line-height: 1.25rem;
     font-family: "SegoeUI";
-
+    letter-spacing: -0.03rem;
 }
 /* end of the product and service section */
 /* --------------gartner section -----------*/
+/* .gartner{
+    display: block;
+    padding: 3.5rem;
+    background-image: url(assets/gartner-img.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gartner-card-con{
+    display: block;
+    margin-top:2rem;
+} */
 .gartner{
     display: block;
     position: relative;
@@ -1583,8 +1504,8 @@ header{
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
-    margin-right: -.25rem;
-    margin-left: -.25rem;
+    /* margin-right: -.25rem;
+    margin-left: -.25rem; */
 }
 .gartner-card-main{
     display: flex;
@@ -1664,6 +1585,7 @@ header{
     padding:1rem;
     position: relative;
     width: 100%;
+    margin-top: 2.25rem;
 }
 .g-text{
     display: flex;
@@ -1731,7 +1653,7 @@ header{
 /* ---------end of the gartner section--------------- */
 /* ----------resource section---------- */
 .resource{
-    display: block;
+    display:block;
     background-color: #f4fafd;
     width: 100%;
 }
