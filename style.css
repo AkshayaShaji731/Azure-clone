@@ -158,7 +158,7 @@ header{
     left: 0;
     top: 54px;
     width: 100%;
-    height:34px;
+    height:33px;
     border-bottom: 1px solid #e6e6e6;
     color: var(--dark);
     background: var(--light);
@@ -2451,4 +2451,29 @@ footer{
     float: left;
     padding-top: 6px;
     padding-right: 13px;
+}
+@media screen and (min-width:375px) {
+    .social-con {
+        padding: 1.40rem 1rem 0.40rem;
+    }
+    .social{
+        flex-direction: row;
+    }
+    .social-top{
+        margin-top: -2px;
+    }
+    .social-top a{
+    padding: 0.93rem 0.90rem 0.90rem;
+    margin-top: -1px;
+    }
+    .social-top a img{
+        margin-top: 0.5px;
+    }
+    .social-bottom{
+        margin-left: -4px;
+        margin-block: 0.75rem 0rem;
+    }
+    .social a{
+    margin-right: 0.95rem
+    }
 }
