@@ -478,14 +478,13 @@ header{
     box-sizing: border-box;
     text-align: left;
     position: relative;
-    padding:3.5rem 0 ;
+    padding:3.5rem 1rem ;
     background-image: url(assets/future.avif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .feature-head{
-    padding-inline: 1rem;
     display: block;
 }
 .f-head-content{
@@ -517,7 +516,7 @@ header{
 }
 .f-inner-card-con{
     display: flex;
-    padding-inline: 1.25rem;
+    padding-inline: 0.25rem;
 }
 .f-card{
     display:flex;
@@ -1023,6 +1022,7 @@ width: 100%;
     display: flex;
     width: fit-content;
     align-items: center;
+    justify-content: center;
     gap: 0.75rem;
     border: 2px solid transparent;
     padding: 0.875rem;
@@ -1330,7 +1330,7 @@ width: 100%;
 }
 .pro-ser-link a .image{
     margin-bottom: 1px;
-    padding: 0.5rem;
+    padding: 0.5rem 0.492rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1538,7 +1538,7 @@ width: 100%;
     align-items: center;
     position: relative;
     background-image: url(assets/resource-back-img.avif);
-    background-position: center;
+    background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -1626,7 +1626,7 @@ width: 100%;
     font-family: "SegoeUI";
 }
 .scroll-btn{
-    margin: 2.1rem 0 0 0;
+    margin: 2.15rem 0 0 0;
     padding: 0 0 2.5rem 0;
     display:block;
     position:relative;
@@ -1709,7 +1709,7 @@ width: 100%;
     margin: 0;
 }
 .r-link{
-    margin-left: -2px;
+    margin-left: -4px;
     margin-top: 0.25rem;
 }
 .r-link .text{
@@ -1831,9 +1831,13 @@ width: 100%;
     margin: 0;
 }
 .customer-card-con{
-    display: block;
+    display:flex;
+    gap: 1.5rem;
     margin-top:1.67rem;
+    padding-bottom: 5px;
     padding-inline:1.46rem;
+    overflow-x: scroll;
+    scrollbar-width: none;
 }
 .cust-card{
     /* display: flex;
@@ -1918,7 +1922,7 @@ width: 100%;
     line-height: 1.75rem;
     font-family: "SegoeUI";
     color: #17253d;
-    margin-top: 2px;
+    margin-top: 1px;
 }
 .cust-c-bottom{
     display: flex;
@@ -1953,6 +1957,7 @@ width: 100%;
     display: flex;
     gap: 0.75rem;
     justify-content: flex-start;
+    margin-top: 1px;
 }
 .c-b-link1-l{
     display: flex;
@@ -1971,6 +1976,9 @@ width: 100%;
     height: 100%;
     object-fit: cover;
 }
+#c-b-link-id{
+    margin-top: 4px;
+}
 .c-b-link-txt-con{
     display:block;
     text-align: left;
@@ -1982,7 +1990,7 @@ width: 100%;
     font-weight: 600;
     font-size: 0.875rem;
     line-height: 1.25rem;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.0375em;
     color: #0067b8; 
     text-decoration: underline;
     font-family: "SegoeUI"; 
@@ -1996,11 +2004,11 @@ width: 100%;
 }
 .cust-btn{
     display: block;
-    margin: 1.25rem 0 0 0;
+    margin: 1.2rem 0 0 0;
 
 }
 .cust-btn a{
-    padding: 0.85rem;
+    padding: 0.87rem;
     border-radius: 0.5rem;
     background-color: #0078d4;
     color:var(--light);
@@ -2020,18 +2028,23 @@ width: 100%;
     font-family: "SegoeUI";
 }
 .cust-nxt{
-    padding: 1.75rem 1.5rem;
+    padding: 0.70rem 1.5rem 1.15rem;
     display: block;
     gap: 1rem;
 }
 #c-sroll-btn{ 
- margin-top:0.5rem;
+ margin-top:0.15rem;
+ margin-left: -0.25rem;
+ padding: 0;
+ display: flex;
+ gap: 0.5rem;
 }
 #c-scroll{
     height: 50px;
     width: 50px;
     background: transparent;
-    margin-right: 1rem;
+    position: relative;
+    left: 0;
 }
 .c-link{
     padding: 0rem 1rem 0.4rem;
@@ -2318,5 +2331,13 @@ footer{
     }
     .social a{
     margin-right: 0.95rem
+    }
+}
+@media screen and (min-width:768px) {
+    .content{
+        padding: 0 4rem;
+    }
+    .content-4-inner{
+        flex-direction: row;
     }
 }
