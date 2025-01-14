@@ -478,252 +478,157 @@ header{
     box-sizing: border-box;
     text-align: left;
     position: relative;
-    padding:3.25rem 0 3.5rem 0;
+    padding:3.5rem 0 ;
+    background-image: url(assets/future.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
-/*----------background image----------*/
-.content-image{
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    display: block;
-    max-height: 100%;
-}
-/* .f-content{
-    padding-right: 1rem;
-    padding-left: 1rem;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    box-sizing: border-box;
-} */
-.content-image img {
-    object-fit:cover;
-    width: 100%;
-    height: 100%;
-    aspect-ratio: initial;
-    box-sizing: border-box;
-}
-/*----------end of future contend------------*/
-/*----------future content head-------------*/
-.f-content-text{
-    padding: 0 1rem;
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
+.feature-head{
+    padding-inline: 1rem;
     display: block;
 }
-.f-text-head{
-    display: flex;
-    flex-wrap: wrap;
-    margin-right:-0.25rem; 
-    box-sizing: border-box;
-    flex-direction: column;
-}
-.f-t-head1-inner{
-    /* padding-top:0.25rem;
-    padding-bottom: 0.25rem; */
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
-    position: relative;
-    width: 100%;
+.f-head-content{
     display: block;
 }
-.h-inner-main{
-    flex: 0 0 100%;
-    box-sizing: border-box;
-    display: block;
-    /* margin-top:52px; */
-}
-.f-t-head-con{
-    margin-inline: initial;
-    padding-block: 0;
-    box-sizing: border-box;
+.f-head1{
     display: block;
     margin: 0 0 0.75rem;
-}
-.f-t-h-top{
-    display: contents;
     font-weight: 600;
     font-size: 0.75rem;
     line-height: 1rem;
     letter-spacing: 0.08em;
-    color: var(--head-1);
-    font-family: "SegoeUI";
-    margin: 0 0 0.75rem;
 }
-.f-t-h-bottom{
-    display:block;
+.f-head2{
+    display: contents;
+}
+.f-head2 h2{
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 2rem;
     letter-spacing: -0.05em;
-    color: var(--head-2);
-    font-family: "SegoeUI";
-    margin-top: 11px;
+    margin: 0;
 }
-/*----------end of the head content-----------------*/
-/*---------future card section--------------------*/
-.card-container{
-    margin-top: 1.25rem;
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -.25rem;
-    margin-left: -.25rem;
-    box-sizing: border-box;
-}
-.inner-card-con{
+.f-card-container{
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding-left: .5rem;
-    padding-right: .5rem;
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
-    position: relative;
-    width: 100%;
-    box-sizing: border-box;
-    
+    gap: 0.5rem;
 }
-.card-conatiner-main{
+.f-inner-card-con{
     display: flex;
-    flex-wrap:wrap;
-    column-gap: 0.75rem;
-    row-gap: 0.5rem;
+    padding-inline: 1.25rem;
 }
-.card-1-con, .card-2-con, .card-3-con{
+.f-card{
+    display:flex;
     flex: 0 0 100%;
-    display: block;
-    box-sizing: border-box;
-    background-color: var(--light);
-    border-radius: 1rem;
-    /* height:332.141px; */
-    height:404.14px;
-    box-shadow:  0 0.125rem rgba(0, 0, 0, 0.12),0 0.125rem 0.25rem rgba(0, 0, 0, 0.14)
-}
-.card1{
-    position: relative;
-    display: flex;
+    background-color: #fefefe;
+    box-shadow:  0 0.125rem rgba(0, 0, 0, 0.12),0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
     flex-direction: column;
     min-width: 1px;
-    word-wrap: break-word;
-    box-sizing: border-box; 
+    border-radius:1rem;
+    height: 100%;
 }
-.card-image-con{
-    padding-top:0.5rem;
-    padding-inline-start: 0.5rem;
-    padding-inline-end: 0.5rem;
+.f-image-con{
+    display: flex;
+    flex-direction: row;
+}
+.f-image{
+    margin: 0.5rem 0.5rem 0;
+    width: 100%;
+    height: 100%;
     display: block;
 }
-.card-image{
-    display: flex;
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+.f-image img{
+max-width: 100%;
+height: auto;
+object-fit: cover;
+border-radius: 0.5rem;
+aspect-ratio: 2.33333/1;
+width: 100%;
 }
-#card-img-1{
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 0.5rem;
-    box-sizing: border-box;
-    aspect-ratio: 2.33333/1;
-}
-.card-data{
+.f-content-con{
     display: flex;
     flex-direction: column;
-    padding: 1.25rem 1rem;
+    flex: 1 1 auto;
+    padding: 1rem;
     justify-content: space-between;
     position: relative;
-    flex: 1 1 auto;
     min-width: 1px;
-    height:100%;
-    word-wrap:break-word;
-    box-sizing:border-box;
+    word-wrap: break-word;
+    height: 100%;
 }
-.card-data-inner{
+.f-text-con{
     display: flex;
-    align-items: flex-start;
-    text-align:left;
+    flex-direction: column;
     gap: 0.75rem;
-}
-.data-1{
-    display: flex;
-    flex-direction:column;
-    gap:0.75rem;
-}
-.data-head{
-    display: contents;
-    box-sizing: border-box;
-    font-weight:600;
-    font-size: 1.125rem;
-    line-height:1.5rem;
-    letter-spacing: -0.03em;
     text-align: left;
-    font-family: "SegoeUI";
-    color: var(--head-2);
+    align-items: flex-start;
 }
-.data-para{
+.f-t-head-con{
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+}
+.f-t-head{
     display: contents;
-    font-weight: 400;
+}
+.f-t-head h3{
+    font-weight: 600;
+    font-size: 1.125rem;
     line-height: 1.5rem;
     letter-spacing: -0.03em;
-    color: var(--head-1);
-    text-align-last:start;
+    margin: 0;
 }
-.data-link{
-    margin-top: 1.3rem;
-    display:flex;
+.f-para{
+    display: contents;
+    font-weight: 400px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.03em;
+}
+.f-link{
+    margin-top: 2rem;
+    display: flex;
     justify-content: flex-start;
-    flex-direction:row;
     gap: initial;
-    box-sizing: border-box;
-    word-wrap: break-word;
 }
-.data-link a{
-    color: #004275;
-    text-decoration: none;
+.f-link a{
     display: inline-flex;
     gap: 0.5rem;
     align-items: center;
-    cursor: pointer;
+    text-decoration: none;
 }
-.data-link-arrow{
-    flex-grow: 1;
-    background-color: #006dc1;
-    padding: 0.62rem;
+.f-link-btn{
+    display: flex;
+    gap: 0.25rem;
+    padding: 0.625rem 0.617rem; ;
+    justify-content: center;
+    background-color:#0078d4;
+    border-radius: 0.5rem;
+    color: var(--light);
+}
+.f-link-btn span{
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    justify-content: center;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    margin-top: -1px;
 }
-.data-link-arrow::before{
+.f-link-btn span::before{
     content: "";
-    font-family:"Fluent Icons";
     font-weight: 400;
     line-height: 1;
-    color: var(--light);
+    color: #fff;
     font-size: .9375rem;
+    font-family: "Fluent Icons";
 }
-.data-link-text{
-    padding-bottom: 0.125rem;
-    color: #004275;
+.f-link a .text{
     font-weight: 600;
-    font-size:0.875rem;
+    font-size: 0.875rem;
     line-height: 1.25rem;
-    cursor: pointer;
-    letter-spacing: -0.49px;
-    font-family: "SegoeUI";
-    
+    letter-spacing: -0.032em;
+    color: rgb(0, 66, 117);
+    margin-top: -1px;
 }
+
 /*----------- end of the cards section ----------*/
 
 /*---------------- end of the future section -----------*/
