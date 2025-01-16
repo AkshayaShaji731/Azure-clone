@@ -580,11 +580,12 @@ width: 100%;
     margin: 0;
 }
 .f-para{
-    display: contents;
-    font-weight: 400px;
+    display: block;
+    font-weight: 400;
     font-size: 1rem;
     line-height: 1.5rem;
     letter-spacing: -0.03em;
+    color: #17253d;
 }
 .f-link{
     margin-top: 2rem;
@@ -735,7 +736,7 @@ width: 100%;
 
 /*------------------solution nav section------------------*/
 
-.solution-nav-conatiner{
+.sol-nav-conatiner{
     display: block;
     margin-left: 0;
     margin-right: 0;
@@ -1112,6 +1113,7 @@ width: 100%;
 .pro-ser-card-con{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     padding-inline:0.25rem;
     row-gap:0.75rem;
 
@@ -1364,12 +1366,13 @@ width: 100%;
 /* --------------gartner section -----------*/  
 .gartner{
     display: block;
-    padding: 3.5rem 1.25rem;
+    padding: 3.57rem 1.25rem 3.5rem;
     position: relative;
     background-image:url(assets/gartner-img.avif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: -0.07rem;
 }
 .gartner-card-con{
     display: block;
@@ -1831,7 +1834,7 @@ width: 100%;
     margin: 0;
 }
 .customer-card-con{
-    display:flex;
+    display:block;
     gap: 1.5rem;
     margin-top:1.67rem;
     padding-bottom: 5px;
@@ -1922,7 +1925,7 @@ width: 100%;
     line-height: 1.75rem;
     font-family: "SegoeUI";
     color: #17253d;
-    margin-top: 1px;
+    margin-top: 2px;
 }
 .cust-c-bottom{
     display: flex;
@@ -1994,6 +1997,11 @@ width: 100%;
     color: #0067b8; 
     text-decoration: underline;
     font-family: "SegoeUI"; 
+}
+.c-b-link2{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
 }
 .c-b-link2-con{
     display: flex;
@@ -2166,7 +2174,7 @@ width: 100%;
 }
 .social-top a{
     display:inline-flex;
-    padding: 0.90rem;
+    padding: 0.89rem;
     /* margin-block: 0.5rem; */
     background-color: #e6e6e6;
     border-radius: 0.2rem;
@@ -2185,6 +2193,7 @@ width: 100%;
 }
 .social-top a img{
     margin-right: 0.5rem;
+    margin-top: 1px
 }
 .social a img{
     max-width: 100%;
@@ -2194,7 +2203,7 @@ width: 100%;
 }
 .social-bottom {
     margin-left: 0.75rem;
-    margin-block: 0.65rem;
+    margin-block:0.62rem 0.65rem;
     display: flex;
 }
 .social a{
@@ -2300,6 +2309,18 @@ footer{
     padding-right: 13px;
 }
 @media screen and (min-width:375px) {
+    #sol-li-1-b-id1{
+        line-height: 1.65rem;
+    }
+    #sol-li-1-btn-1::before{
+        margin-bottom: 1px;
+    }
+    .sol-li-drop-content{
+        margin-top: -0.60rem;
+    }
+    .sol-arrow button{
+        margin-top: 1px;
+    }
     #sol-li-1-btn2::before{
         margin-top:0;
      }
@@ -2307,7 +2328,16 @@ footer{
         margin-top: 2px;
      }
      #pro-ser-container {
-        padding-block: 3rem 3.10rem;
+        padding-block: 3rem 3.25rem;
+    }
+    .card-img-con img{
+        aspect-ratio: 1/0.897;
+    }
+    .c-b-link2{
+        flex-direction: row;
+    }
+    .cust-c-bottom{
+        margin-top: 31px;
     }
     .social-con {
         padding: 1.40rem 1rem 0.40rem;
@@ -2327,10 +2357,27 @@ footer{
     }
     .social-bottom{
         margin-left: -4px;
-        margin-block: 0.75rem 0rem;
+        margin-block: 0.77rem 0rem;
     }
     .social a{
     margin-right: 0.95rem
+    }
+}
+@media screen and (min-width:425px) {
+    #sol-li-1-b-id2{
+        line-height: 1rem;
+    }
+    #sol-li-1-b-id1{
+        line-height: 1.5rem;
+    }
+    #sol-li-1-btn-1::before{
+        margin-bottom: 0px;
+    }
+    .sol-li-drop-content{
+        margin-top: -0.5rem;
+    }
+    .sol-arrow button{
+        margin-top: 0px;
     }
 }
 @media screen and (min-width:768px) {
@@ -2339,5 +2386,39 @@ footer{
     }
     .content-4-inner{
         flex-direction: row;
+    }
+    .feature-content{
+        padding-inline: 4em;
+    }
+    .f-inner-card-con{
+        padding-inline: 0 0.25rem;
+    }
+    .f-para{
+        padding-right: 1.5rem;
+    }
+    .solution{
+        padding-inline: 3.90rem;
+        margin-left: -2px;
+    }
+    .sol-li-1-btn{
+        justify-content: flex-end;
+    } 
+    #sol-li-1-b-id1{
+        line-height: 1.65rem;
+    }
+    #sol-li-1-btn-1::before{
+        margin-bottom: 1px;
+    }
+    .sol-li-drop-content{
+        margin-top: -0.60rem;
+    }
+    .sol-arrow button{
+        margin-top: 1px;
+    }
+    .solution-head{
+        margin-inline: 0px;
+    }
+    #sol-li-1-btn3::before {
+        margin-top:0;
     }
 }
