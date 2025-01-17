@@ -1026,7 +1026,7 @@ width: 100%;
     justify-content: center;
     gap: 0.75rem;
     border: 2px solid transparent;
-    padding: 0.875rem;
+    padding:0.875rem 0.8663rem;
     position: relative;
     text-decoration: none;
     cursor: pointer;
@@ -1440,7 +1440,7 @@ width: 100%;
     font-family: "SegoeUI";
 }
 .g-c-para{
-    display:contents;
+    display:block;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -2309,6 +2309,9 @@ footer{
     padding-right: 13px;
 }
 @media screen and (min-width:375px) {
+    #f-f-text{
+        margin-top: -3px;
+    }
     #sol-li-1-b-id1{
         line-height: 1.65rem;
     }
@@ -2329,6 +2332,12 @@ footer{
      }
      #pro-ser-container {
         padding-block: 3rem 3.25rem;
+    }
+    #pro-nav-f-btn{
+        padding: 0.59rem 1rem 0.54rem;
+    }
+    #pro-ser-head{
+        margin-top: 1px;
     }
     .card-img-con img{
         aspect-ratio: 1/0.897;
@@ -2364,6 +2373,9 @@ footer{
     }
 }
 @media screen and (min-width:425px) {
+    #f-f-text{
+        margin-top: -1px;
+    }
     #sol-li-1-b-id2{
         line-height: 1rem;
     }
@@ -2396,6 +2408,9 @@ footer{
     .f-para{
         padding-right: 1.5rem;
     }
+    #f-f-text{
+        margin-top: -3px;
+    }
     .solution{
         padding-inline: 3.90rem;
         margin-left: -2px;
@@ -2420,5 +2435,61 @@ footer{
     }
     #sol-li-1-btn3::before {
         margin-top:0;
+    }
+    .s-f-btn-con{
+        display: block;
+    }
+    .gartner{
+        padding-inline:4rem 4.25rem;
+    }
+    .g-c-para{
+        padding-right: 10px;
+    }
+    .g-button{
+        display: block;
+    }
+    .g-button a{
+        padding-inline: 0.75rem;
+    }
+    .resource-b-inner{
+        padding-inline: 4rem;
+    }
+    .azure-inner{
+        padding-inline: 4rem;
+    }
+    .azure-btn-con{
+        display: flex;
+        justify-content: center;
+    }
+    .azure-btn{
+        width: auto;
+    }
+    .azure-btn a{
+        padding-inline: 0.875rem;
+    }
+    .customer-head-con{
+        padding-inline: 4rem;
+    }
+    .N-step{
+        padding-inline: 4rem;
+    }
+    .social-con{
+        padding-inline: 4rem;
+    }
+    footer{
+        padding-bottom: 0;
+    }
+    .f-top{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .f-ul{
+        margin-top:-3px;
+        display: flex;
+        justify-content:end;
+        margin-right: -3px;
+    }
+    .f-ul ul li{
+        padding-right: 26.95px;
+        padding-bottom: 4px;
     }
 }
