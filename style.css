@@ -1893,39 +1893,36 @@ width: 100%;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+    margin-top: 0.25rem;
 }
-.c-top-img-con{
+.cust-top-img{
     display: block;
-    width: 242px;
-    height:74.4219px;
+    margin: -.25rem 0 0 0;
+}
+.cust-top-img-inner{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
     max-width: 100%;
 }
-.c-top-image{
-    display: block;
-    width: 173px;
-    height: 100%;
+.cust-top-img-inner img{
     border: 0.0625rem solid #bdc5d2;
     border-radius: 0.5rem;
-}
-.c-top-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    display: flex;
+    max-width: 100%;
+    height: auto;
     aspect-ratio: initial;
-    vertical-align: center;
 }
-.cust-top-content{
+.cust-c-text{
     display: contents;
-    width: 100%;
 }
-.cust-top-content span{
+.cust-c-text span{
     font-weight: 600;
     font-size: 1.25rem;
-    letter-spacing: -0.05em;
     line-height: 1.75rem;
-    font-family: "SegoeUI";
+    letter-spacing:-0.05em;
     color: #17253d;
-    margin-top: 2px;
 }
 .cust-c-bottom{
     display: flex;
@@ -1938,77 +1935,64 @@ width: 100%;
     flex-direction: column;
     gap: 0.5rem;
 }
-.c-b-text{
+.cust-c-b-head{
     display: contents;
 }
-.c-b-text h3{
+.cust-c-b-head h3{
+    margin: 0;
     font-weight: 600;
-    font-family: "SegoeUI";
     font-size: 1rem;
     line-height: 1.5rem;
-    letter-spacing:-0.03em;   
-    color: #0e1726; 
-    margin: 0;
+    letter-spacing: -0.03em;
+    color: #0e1726;
 }
-.c-b-link{
+.cust-c-b-link-con{
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
-    /* flex-wrap: wrap; */
+    gap: 0.88rem;
+    margin-top: 3px;
 }
-.c-b-link1-con{
+.cust-c-b-link{
     display: flex;
-    gap: 0.75rem;
-    justify-content: flex-start;
-    margin-top: 1px;
+    flex-direction:row;
+    position: relative;
+    column-gap: 0.75rem;
 }
-.c-b-link1-l{
+.cust-c-b-link1{
+    display: block;
+}
+.cust-c-b-link1-1{
     display: flex;
     column-gap: 0.5rem;
-    /* width: 112.734px; */
 }
-.c-b-link-img{
-    max-width: 16px;
-    max-height: 16px;
-    height: 100%;
+.cust-c-b-link1-img{
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 20px;
+    max-height: 20px;
+    margin: 0;
+    padding: 0;
+}
+.cust-c-b-link1-img img{
+    display: block;
     width: 100%;
-    margin-top: 5px;
-}
-.c-b-link-img img{
-    width: 100%;
     height: 100%;
-    object-fit: cover;
+    max-width: 20px;
+    max-height: 20px;
+    margin-top: 2px;
 }
-#c-b-link-id{
-    margin-top: 4px;
-}
-.c-b-link-txt-con{
-    display:block;
-    text-align: left;
-}
-.c-b-link-txt{
+.cust-c-b-link1-1 span{
     display: contents;
+    text-align: left;
+    letter-spacing: -0.03em;
 }
-.c-b-link-txt a{
+.cust-c-b-link1-1 span a{
+    text-decoration: underline;
     font-weight: 600;
+    color: #0067b8;
     font-size: 0.875rem;
     line-height: 1.25rem;
-    letter-spacing: -0.0375em;
-    color: #0067b8; 
-    text-decoration: underline;
-    font-family: "SegoeUI"; 
-}
-.c-b-link2{
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-.c-b-link2-con{
-    display: flex;
-    gap: 0.75rem;
-}
-.c-b-link2-con img{
-    width:20px
 }
 .cust-btn{
     display: block;
