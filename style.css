@@ -1797,103 +1797,122 @@ width: 100%;
 }
 .customer{
     display: block;
-    background-image: url(assets/customer-back.avif);
-    background-repeat: no-repeat;
+    padding: 3rem 1rem 2.55rem;
+    background-image: url("assets/customer-back.avif");
     background-position: center;
-    background-size: cover;
-    padding-block: 3rem 2.5rem;
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
-.customer-head-con{
-    display: block;
-    padding-inline: 1rem;
+.customer-head{
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
-.c-head1{
-    margin: -4px 0 11px;
-}
-.c-head1 div{
-    display: contents;
+.cust-head1{
+    display:block;
     font-weight: 600;
     font-size: 0.75rem;
     line-height: 1rem;
-    letter-spacing:0.08em;
-    text-transform: uppercase;
-    font-family: "SegoeUI";
+    letter-spacing: 0.08em;
     color: #17253d;
+    margin-bottom: 0.75rem;
 }
-.c-head2{
+.cust-head2{
     display: contents;
 }
-.c-head2 h2{
+.cust-head2 h2{
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 2rem;
-    letter-spacing: -0.05em;
-    color: #0e1726;
-    font-family: "SegoeUI";
-    word-spacing: 0;
+    letter-spacing:-0.05em;
     margin: 0;
 }
-.customer-card-con{
-    display:block;
+.cust-body{
+    margin-top: 1.68rem;
+    display: block;
+}
+.cust-body-inner{
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
-    margin-top:1.67rem;
-    padding-bottom: 5px;
-    padding-inline:1.46rem;
+}
+.cust-body-top{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.cust-card-con{
+    /* margin-bottom: 79.12px; */
+    display: block;
     overflow-x: scroll;
+    /* overflow-y: hidden; */
     scrollbar-width: none;
 }
 .cust-card{
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-inline:0.25rem; */
+    display: flex;
+    column-gap: 0.75rem;
+    row-gap: 0.5rem;
+    flex-wrap: nowrap;
+    width: auto;
+    padding-inline: 0.45rem;
+}
+.cust-card-inner{
+    /* padding: 0.1875rem; */
     display: block;
-    background-color: #fff;
+    flex: 0 0 100%;
+}
+.cust-card-main{
+    display: flex;
+    flex-direction: column;
+    min-width: 1px;
+    /* height: 100%; */
+    position: relative;
     border-radius: 1rem;
     box-shadow:  0 0.125rem rgba(0, 0, 0, 0.12),0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
+    background-color: #fefefe;
 }
-.c-img{
+.cust-card-img-con{
     display: flex;
     flex-direction: row;
 }
-.card-img-con{
+.cust-card-img{
+    padding: 0.5rem 0.5rem 0 0.5rem;
     display: block;
-    margin: 0.5rem 0.5rem 0rem 0.5rem;
     width: 100%;
     height: 100%;
     max-width: 100%;
 }
-.card-img{
-    display:flex;
-    width: 100%;
-    /* height: 219.42px; */
-}
-.card-img-con img{
+.cust-card-img img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    aspect-ratio:1/0.85;
     border-radius: 0.5rem;
-    aspect-ratio:1/0.852;
-    vertical-align: middle;
+    object-fit: cover;
 }
 .cust-content-con{
-    display: block;
-    padding: 1rem;
-}
-.cust-content{
     display: flex;
-    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem 1.20rem;
     height: auto;
+    flex-direction: column;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.cust-c-con-inner{
+    display: flex;
     gap: 1.5rem;
+    flex-direction: column;
     position: relative;
+    min-width: 1px;
     flex: 1 1 auto;
-    height: 100%;
+    /* height: 100%; */
 }
 .cust-c-top{
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    margin-top: 0.25rem;
+    margin-left: -0.20rem;
 }
 .cust-top-img{
     display: block;
@@ -1915,7 +1934,7 @@ width: 100%;
     aspect-ratio: initial;
 }
 .cust-c-text{
-    display: contents;
+    display: block;
 }
 .cust-c-text span{
     font-weight: 600;
@@ -1928,12 +1947,14 @@ width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-top: 14px;
+    /* height: 100%; */
 }
-.cust-c-b-text{
+.cust-c-bottom-inner{
     display: flex;
-    flex-direction: column;
     gap: 0.5rem;
+    flex-direction: column;
+    margin-top: 0.875rem;
+    margin-left: -0.20rem;
 }
 .cust-c-b-head{
     display: contents;
@@ -1994,33 +2015,32 @@ width: 100%;
     font-size: 0.875rem;
     line-height: 1.25rem;
 }
-.cust-btn{
-    display: block;
-    margin: 1.2rem 0 0 0;
-
+.cust-card-btn{
+    margin-top: 1.75rem;
+    display:flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-inline: -0.20rem;
 }
-.cust-btn a{
-    padding: 0.87rem;
-    border-radius: 0.5rem;
+.cust-card-btn a{
+    padding:0.80rem 1.5rem;
     background-color: #0078d4;
-    color:var(--light);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: var(--light);
+    border-radius: 0.5rem;
     text-decoration: none;
-    font-family: "SegoeUI";
-}
-.cust-btn a span{
-    padding-bottom: 0.125rem;
     text-align: center;
+    display: block;
+}
+.cust-card-btn a span{
+    display: block;
+    padding-bottom: 0.125rem;
     font-weight: 600;
-    font-size: 0.9375rem;
+    font-size: .9375rem;
     line-height: 1.375rem;
-    letter-spacing: -0.02rem;
-    font-family: "SegoeUI";
+    letter-spacing: -.02em;
 }
 .cust-nxt{
-    padding: 0.70rem 1.5rem 1.15rem;
+    padding:1.15rem 0.5rem 1.15rem;
     display: block;
     gap: 1rem;
 }
@@ -2039,12 +2059,12 @@ width: 100%;
     left: 0;
 }
 .c-link{
-    padding: 0rem 1rem 0.4rem;
+    padding: 0rem 0 0.4rem;
     /* margin-top: 0.25rem; */
     display: block;
 }
 .c-link .pro-ser-link .image{
-    margin-top: -1px;
+    margin-top: -2px;
 }
 .c-link .pro-ser-link .text{
     margin-top: -4px;
